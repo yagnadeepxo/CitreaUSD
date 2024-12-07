@@ -1,13 +1,10 @@
-'use client'
-
 import { useState, useEffect } from 'react'
-import { SwapInterface } from '~~/components/swap-interface'
 import { ethers } from 'ethers'
 
 const CUSD_TOKEN_ADDRESS = '0x684135d5C252868A14Fe2Bf032D2101a30a7022D'
 const CUSD_TOKEN_ABI = ['function balanceOf(address account) external view returns (uint256)']
 
-export default function Home() {
+export function useWalletConnect() {
   const [address, setAddress] = useState<string | null>(null)
   const [balance, setBalance] = useState<string | null>(null)
   const [status, setStatus] = useState<string>('Connect your wallet to Citrea Testnet')
@@ -58,7 +55,7 @@ export default function Home() {
       // Get cUSD balance
       const cUSDContract = new ethers.Contract(CUSD_TOKEN_ADDRESS, CUSD_TOKEN_ABI, provider)
       const cUSDBalance = await cUSDContract.balanceOf(walletAddress)
-      const cUSDBalanceInEth = ethers.utils.formatUnits(cUSDBalance, 18) 
+      const cUSDBalanceInEth = ethers.utils.formatUnits(cUSDBalance, 18) // Assuming cUSD has 18 decimals
       
       setBalance(`${parseFloat(balanceInEth).toFixed(2)} cBTC / ${parseFloat(cUSDBalanceInEth).toFixed(2)} cUSD`)
     } catch (error) {
@@ -108,12 +105,6 @@ export default function Home() {
     }
   }, [])
 
-  return (
-  <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-yellow-200 to-orange-200 p-4 font-mono">
-
-    {/* Swap Interface Section */}
-    <SwapInterface />
-  </div>
-);
+  return { address, balance, status, connectWallet }
 }
 

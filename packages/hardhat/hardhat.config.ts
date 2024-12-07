@@ -130,6 +130,11 @@ const config: HardhatUserConfig = {
       url: "https://alfajores-forno.celo-testnet.org",
       accounts: [deployerPrivateKey],
     },
+    citrea: {
+      url: "https://rpc.testnet.citrea.xyz",
+      chainId: 5115,
+      accounts: ["YOUR_PRIVATE_KEY"],
+    },
   },
   // configuration for harhdat-verify plugin
   etherscan: {
