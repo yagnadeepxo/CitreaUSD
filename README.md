@@ -16,6 +16,11 @@
 
 3. **Direct Staking from Bitcoin Blockchain**: Seamless integration enables users to stake directly from the Bitcoin blockchain, abstracting complexity while bridging Bitcoin with the DeFi ecosystem.  
 
+### BitcoinLightClient
+
+![citreaUSD architecture](https://github.com/user-attachments/assets/73615779-70e8-48af-8998-94118e740380)
+
+
 ## Requirements
 
 Before you begin, you need to install the following tools:
