@@ -1,11 +1,20 @@
 # CitreaUSD (cUSD)
 
+![Screenshot 2024-12-08 at 4 04 31 AM 2](https://github.com/user-attachments/assets/2eb2924c-75ad-4b86-8fd2-40aade20d428)
+
 🧪 Our project introduces **cUSD**, a **Bitcoin-backed stablecoin** built on **Citrea**. By locking Bitcoin through **Citrea's BitcoinLightClient**, users can mint cUSD, a **stable asset designed for DeFi apps**. This enables seamless participation in defi while **leveraging Bitcoin's security** and value.
 
 ⚙️ Built using NextJS, RainbowKit, Hardhat, Wagmi, Viem, and Typescript.
 
-![Screenshot 2024-12-08 at 3 48 33 AM](https://github.com/user-attachments/assets/6c7abe83-b826-49ce-bfe1-c0528fc416eb)
+### Stablecoin with Native Yield to Tap into the Bitcoin Economy, Enabled by Citrea  
+1. **Bitcoin-Backed Store of Value**: Introducing **cUSD**, a stablecoin backed by Bitcoin, catering to DeFi and trading communities on Citrea with a reliable and secure value proposition.  
+![Screenshot 2024-12-08 at 3 48 33 AM](https://github.com/user-attachments/assets/57a5b69e-42a1-4188-b0db-373860021619)
 
+2. **Bitcoin-Native Yield**: Staking **cUSD** to **sCUSD** provides users with native Bitcoin yield, unlocking sustainable rewards for stablecoin holders.  
+
+![Screenshot 2024-12-08 at 3 48 52 AM](https://github.com/user-attachments/assets/0c1e5740-b63d-4145-96c6-740b289af75f)
+
+3. **Direct Staking from Bitcoin Blockchain**: Seamless integration enables users to stake directly from the Bitcoin blockchain, abstracting complexity while bridging Bitcoin with the DeFi ecosystem.  
 
 ## Requirements
 
